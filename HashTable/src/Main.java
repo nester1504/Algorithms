@@ -1,27 +1,18 @@
 public class Main {
 
     public static void main(String[] args) {
+        RedBlackTree<Integer, String> tree = new RedBlackTree<>();
 
-        HashTable hashTable = new HashTable<>();
+        // Вставка элементов в дерево
+        tree.insert(5, "five");
+        tree.insert(3, "three");
+        tree.insert(8, "eight");
+        tree.insert(1, "one");
+        tree.insert(4, "four");
 
-        hashTable.add(1, 5);
-        System.out.println(hashTable.find(1));
-
-        hashTable.add(4, 8);
-        System.out.println(hashTable.find(4));
-
-        hashTable.add(5, 9);
-        System.out.println(hashTable.find(5));
-
-        hashTable.add(6, 9);
-        System.out.println(hashTable.find(6));
-
-        hashTable.add(7, 20);
-        System.out.println(hashTable.find(7));
-
-        hashTable.add(8, 22);
-        System.out.println(hashTable.find(8));
-
+        // Вывод дерева
+        System.out.println("Красно-черное дерево:");
+        tree.printTree();
 
     }
 
